@@ -921,7 +921,7 @@ function upgradeStats(recalculate) {
         Game.elderWrath = existingWrath;
         var deltaCps = cpsNew - cpsOrig;
         var baseDeltaCps = baseCpsNew - baseCpsOrig;
-        var efficiency = (current.season && current.season == seasons[FrozenCookies.defaultSeason]) ? cost/baseCpsOrig : (priceReduction > cost) ? 1 : purchaseEfficiency(cost, deltaCps, baseDeltaCps, cpsOrig);
+        var efficiency = (current.season) ? (current.season == seasons[FrozenCookies.defaultSeason] ? 1e-254 : (current.season == "fools" ? 1e-253 : 1e-255)) : (priceReduction > cost) ? 1 : purchaseEfficiency(cost, deltaCps, baseDeltaCps, cpsOrig);
         return {'id' : current.id, 'efficiency' : efficiency, 'base_delta_cps' : baseDeltaCps, 'delta_cps' : deltaCps, 'cost' : cost, 'purchase' : current, 'type' : 'upgrade'};
       }
     }).filter(function(a){return a;});
