@@ -16,7 +16,7 @@ function setOverrides() {
   
 
   
-  logEvent("Load", "Initial Load of Frozen Cookies v " + FrozenCookies.branch + "." + FrozenCookies.version + ". (You should only ever see this once.)");
+  logEvent("Load", "Initial Load of Spell Automation. (You should only ever see this once.)");
 
   FrozenCookies.frequency = 100;
 
