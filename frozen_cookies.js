@@ -1,6 +1,6 @@
 // Global Variables
-var scriptElement = document.getElementById('frozenCookieScript') !== null ?
-		document.getElementById('frozenCookieScript') : 
+var scriptElement = document.getElementById('spellAutomationScript') !== null ?
+		document.getElementById('spellAutomationScript') : 
 		document.getElementById('modscript_frozen_cookies'),
 	baseUrl = scriptElement !== null ?
 		scriptElement.getAttribute('src').replace(/\/frozen_cookies\.js$/, '') :
