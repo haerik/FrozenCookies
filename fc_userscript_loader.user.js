@@ -18,8 +18,8 @@
 function LoadFrozenCookies() {
   var js = document.createElement('script');
   js.setAttribute('type', 'text/javascript');
-  js.setAttribute('id', 'frozenCookieScript');
-  js.setAttribute('src', 'https://rawgithub.com/haerik/FrozenCookies/master/frozen_cookies.js');
+  js.setAttribute('id', 'spellAutomationScript');
+  js.setAttribute('src', 'https://rawgithub.com/haerik/FrozenCookies/SpellAutomation/frozen_cookies.js');
   document.head.appendChild(js);
 }
 
